@@ -1,12 +1,12 @@
-"use client"
+"use client";
 
 /* eslint-disable no-unused-vars */
 import { E164Number } from "libphonenumber-js/core";
 import Image from "next/image";
 import ReactDatePicker from "react-datepicker";
 import { Control } from "react-hook-form";
-import 'react-phone-number-input/style.css'
-import PhoneInput from 'react-phone-number-input'
+import "react-phone-number-input/style.css";
+import PhoneInput from "react-phone-number-input";
 
 import { Checkbox } from "./ui/checkbox";
 import {
@@ -119,14 +119,14 @@ const RenderInput = ({ field, props }: { field: any; props: CustomProps }) => {
             className="ml-2"
           />
           <FormControl>
-            {/* <ReactDatePicker
+            <ReactDatePicker
               showTimeSelect={props.showTimeSelect ?? false}
               selected={field.value}
               onChange={(date: Date) => field.onChange(date)}
               timeInputLabel="Time:"
               dateFormat={props.dateFormat ?? "MM/dd/yyyy"}
               wrapperClassName="date-picker"
-            /> */}
+            />
           </FormControl>
         </div>
       );
